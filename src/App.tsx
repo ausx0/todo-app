@@ -1,6 +1,6 @@
 // App.tsx
 
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 
 import {
@@ -10,12 +10,10 @@ import {
   Container,
   Toolbar,
   Typography,
-  useMediaQuery,
   IconButton,
   Menu,
   MenuItem,
 } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
 import HomeIcon from "@mui/icons-material/Home";
 import SearchIcon from "@mui/icons-material/Search";
 import PersonIcon from "@mui/icons-material/Person";
@@ -29,7 +27,6 @@ function App() {
     t,
     i18n: { changeLanguage, language },
   } = useTranslation();
-  const [currentLanguage, setCurrentLanguage] = useState(language);
   const [value, setValue] = useState(0);
   const isMobile = useResponsive();
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null); // For language menu

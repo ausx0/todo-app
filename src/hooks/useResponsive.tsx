@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 /**
  * Custom hook to determine if the current screen size is below a specified breakpoint.
